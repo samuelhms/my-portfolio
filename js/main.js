@@ -105,7 +105,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Samuel Maciel,", "Backend,", "Developer,", "Freelancer."],
+      strings: ["Samuel Maciel,", "Future","Fullstack", "Developer."],
       typeSpeed: 200,
       loop: true,
     });
@@ -181,3 +181,5 @@ $(window).load(function(){
   });
 
 })
+
+$("#main-nav").css("display", "none")
