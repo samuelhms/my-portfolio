@@ -37,7 +37,7 @@ function sortearCertificates() {
         document.querySelector("#certificate").insertAdjacentHTML("afterend", '<div id="certificate' + i + '"></div>');
     }
 
-    console.log(arr);
+    //console.log(arr);
 
     innerCertificates(arr)
 }
@@ -48,11 +48,11 @@ function innerCertificates(arr_list) {
 
 
 
-    console.log(certificates_url[0].url)
+    //console.log(certificates_url[0].url)
 
 
     for (let index = 0; index < arr_list.length; index++) {
-        console.log("#" + arr_list[0].item)
+        //console.log("#" + arr_list[0].item)
 
 
         //insertAdjacentHTML("afterbegin", "<span style='color:red'>My span</span>");
@@ -65,7 +65,7 @@ function innerCertificates(arr_list) {
         html_inner += ' </a>'
         html_inner += ' </div>'
 
-        console.log(html_inner)
+        //console.log(html_inner)
         try {
             document.querySelector("#" + arr_list[index].item).innerHTML = html_inner;
 

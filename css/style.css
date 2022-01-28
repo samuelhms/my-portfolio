@@ -377,6 +377,8 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #about {
+  margin-right: 0px;
+  margin-left: 0px;
   width: 100%;
   height: auto;
   background: #f7f7f7;

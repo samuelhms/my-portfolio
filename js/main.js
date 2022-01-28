@@ -1,5 +1,10 @@
 /*global $, jQuery, alert*/
-$(document).ready(function() {
+
+
+
+
+
+$(document).ready(function () {
 
   'use strict';
 
@@ -10,26 +15,26 @@ $(document).ready(function() {
 
   $(document).on("scroll", onScroll);
 
-  $('a[href^="#"]').on('click', function(e) {
+  $('a[href^="#"]').on('click', function (e) {
     e.preventDefault();
     $(document).off("scroll");
 
-    $('a').each(function() {
+    $('a').each(function () {
       $(this).removeClass('active');
       if ($(window).width() < 768) {
-        $('.nav-menu').slideUp();
+        //$('.nav-menu').slideUp();
       }
     });
 
     $(this).addClass('active');
 
     var target = this.hash,
-        menu = target;
+      menu = target;
 
     target = $(target);
     $('html, body').stop().animate({
       'scrollTop': target.offset().top - 80
-    }, 500, 'swing', function() {
+    }, 500, 'swing', function () {
       window.location.hash = target.selector;
       $(document).on("scroll", onScroll);
     });
@@ -39,7 +44,7 @@ $(document).ready(function() {
   function onScroll(event) {
     if ($('.home').length) {
       var scrollPos = $(document).scrollTop();
-      $('nav ul li a').each(function() {
+      $('nav ul li a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
       });
@@ -49,14 +54,16 @@ $(document).ready(function() {
   // ========================================================================= //
   //  //NAVBAR SHOW - HIDE
   // ========================================================================= //
+
   $("#topo").hover(function () {
+
     console.log("hover")
     $("#main-nav, #main-nav-subpage").slideDown(700);
     $("#main-nav-subpage").removeClass('subpage-nav');
   });
 
-  $(document).ready(function() {
-    $(document).on('mouseenter', '#topo', function() {
+  $(document).ready(function () {
+    $(document).on('mouseenter', '#topo', function () {
       $("#main-nav, #main-nav-subpage").slideDown(700);
       $("#main-nav-subpage").removeClass('subpage-nav');
 
@@ -73,28 +80,31 @@ $(document).ready(function() {
     // });
   });
 
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     var scroll = $(window).scrollTop();
-    if (scroll > 50 ) {
-      $("#main-nav, #main-nav-subpage").slideDown(700);
-      $("#main-nav-subpage").removeClass('subpage-nav');
-    } else {
-      $("#main-nav").slideUp(700);
-      $("#main-nav-subpage").hide();
-      $("#main-nav-subpage").addClass('subpage-nav');
-    }
+    
+       if (scroll > 50) {
+        $("#main-nav, #main-nav-subpage").slideDown(700);
+        $("#main-nav-subpage").removeClass('subpage-nav');
+
+        } else {
+        $("#main-nav").slideUp(700);
+        $("#main-nav-subpage").hide();
+        $("#main-nav-subpage").addClass('subpage-nav');
+        }
+      
   });
 
   // ========================================================================= //
   //  // RESPONSIVE MENU
   // ========================================================================= //
 
-  $('.responsive').on('click', function(e) {
+  $('.responsive').on('click', function (e) {
     $('.nav-menu').slideToggle();
   });
-  $('.smoothScroll').on('click', function(e) {
+  $('.smoothScroll').on('click', function (e) {
     console.log("click")
-   $('.nav-menu ').css('display', '');
+    $('.nav-menu ').css('display', '');
   });
 
   // ========================================================================= //
@@ -103,9 +113,9 @@ $(document).ready(function() {
 
   var typed = $(".typed");
 
-  $(function() {
+  $(function () {
     typed.typed({
-      strings: ["Samuel Maciel,", "Future","Fullstack", "Developer."],
+      strings: ["Samuel Maciel,", "Future", "Fullstack", "Developer."],
       typeSpeed: 200,
       loop: true,
     });
@@ -118,20 +128,20 @@ $(document).ready(function() {
 
 
   $('.services-carousel').owlCarousel({
-      autoplay: true,
-      loop: true,
-      margin: 20,
-      dots: true,
-      nav: false,
-      responsiveClass: true,
-      responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
-    });
+    autoplay: true,
+    loop: true,
+    margin: 20,
+    dots: true,
+    nav: false,
+    responsiveClass: true,
+    responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
+  });
 
   // ========================================================================= //
   //  magnificPopup
   // ========================================================================= //
 
-  var magnifPopup = function() {
+  var magnifPopup = function () {
     $('.popup-img').magnificPopup({
       type: 'image',
       removalDelay: 300,
@@ -148,7 +158,7 @@ $(document).ready(function() {
         // The "opener" function should return the element from which popup will be zoomed in
         // and to which popup will be scaled down
         // By defailt it looks for an image tag:
-        opener: function(openerElement) {
+        opener: function (openerElement) {
           // openerElement is the element on which popup was initialized, in this case its <a> tag
           // you don't need to add "opener" option if this code matches your needs, it's defailt one.
           return openerElement.is('img') ? openerElement : openerElement.find('img');
@@ -166,14 +176,14 @@ $(document).ready(function() {
 // ========================================================================= //
 //  Porfolio isotope and filter
 // ========================================================================= //
-$(window).load(function(){
+$(window).load(function () {
 
   var portfolioIsotope = $('.portfolio-container').isotope({
     itemSelector: '.portfolio-thumbnail',
     layoutMode: 'fitRows'
   });
 
-  $('#portfolio-flters li').on( 'click', function() {
+  $('#portfolio-flters li').on('click', function () {
     $("#portfolio-flters li").removeClass('filter-active');
     $(this).addClass('filter-active');
 
@@ -182,4 +192,13 @@ $(window).load(function(){
 
 })
 
+if ($(window).width() < 480) { //se a tela for menor que 480 px
+  console.log("<480")
+  document.querySelector("#main-nav").style.display = "flex";
+  $('.toplogo').text('Samuel');
+  //$("#main-nav").css("display", "block")
+} else {
+  $('.toplogo').text('Samuel H. Maciel');
+}
 $("#main-nav").css("display", "none")
+

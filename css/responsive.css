@@ -38,6 +38,10 @@
     margin-left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
+
+    display: flow-root;
+    text-align: center;
+    background-color: #ffff;
     
   }
   .responsive {
@@ -110,6 +114,10 @@
     margin-left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
+
+    display: flow-root;
+    text-align: center;
+    background-color: #ffff;
   }
   .responsive {
     float: right;
@@ -181,6 +189,10 @@
     margin-left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
+
+    display: flow-root;
+    text-align: center;
+    background-color: #ffff;
   }
   .responsive {
     float: right;
@@ -234,14 +246,14 @@
 
 @media (max-width: 480px) {
   /* Navbar */
-  nav {
-    display: inline-flex;
-    padding: 5px 35px 10px 25px;
+  nav #main-nav{
+    padding: 5px 35px 10px 25px; 
+    margin-right: 25px;
     
   }
  
   .logo {
-    max-width: 70%;
+    
     float: left;
     height: 60px;
     display: flex;
@@ -254,21 +266,23 @@
     width: 100%;
   }
   .nav-menu li {
-    display: flow-root;
+  
     float: none;
     width: 100%;
-    text-align: center;
     border-top: 1px solid #f7f7f7;
     line-height: 45px;
     margin-left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
+
+    display: flow-root;
+    text-align: center;
     background-color: #ffff;
   }
   .responsive {
     float: right;
-    padding-top: 15px;
-    display: block;
+    padding-top: 10px;
+    display: flex;
   }
   /* About */
   .head-info .header-content h1 {
@@ -313,75 +327,58 @@
 /** Width between 320px to 0
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
-
-@media (max-width: 320px) {
-  /* Navbar */
-  nav {
-    padding: 20px 15px;
-  }
-  .nav-menu {
-    margin-top: 40px;
-    display: none;
-    float: none;
-    width: 100%;
-  }
-  .nav-menu li {
-    float: none;
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid #f7f7f7;
-    line-height: 45px;
-    margin-left: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #f7f7f7;
-  }
-  .responsive {
-    float: right;
-    padding-top: 15px;
-    display: block;
-  }
-  /* About */
-  .head-info .header-content h1 {
-    font-size: 32px;
-  }
-  #about .div-img-bg {
-    padding: 0;
-  }
-  #about .div-img-bg .about-img img {
-    margin-top: 0%;
-    margin-left: calc(0% - 0px);
-  }
-  #about .about-descr .p-heading {
-    font-size: 20px;
-  }
-  #about .about-descr .separator {
+ @media (max-width: 450px) {
+   #main-nav{
+    margin-right: 25px;
+    margin-left: 0px;
+    float: left;
     max-width: 100%;
-    margin-bottom: 0;
+   }
+   #main-nav .container{
+     margin-left: 0px;
+     float: left;
+     max-width: 440px;
+   }
+ }
+ 
+@media (max-width: 412px) {
+  #main-nav{
+    margin-right: 25px;
+    margin-left: 0px;
+    float: left;
+    max-width: 100%;
+   }
+  #main-nav .container{
+    
+    margin-left: 0px;
+    float: left;
+    max-width: 405px ;
   }
-  /* portfolio */
-  #portfolio .portfolio-list .nav li {
-    float: none;
-    margin: 20px;
+}
+@media (max-width: 400px) {
+  #main-nav{
+    margin-right: 25px;
+    margin-left: 0px;
+    float: left;
+    max-width: 100%;
+   }
+  #main-nav .container{
+    
+    margin-left: 0px;
+    float: left;
+    max-width: 395px;
   }
-  /* journal */
-  #journal .journal-block .journal-info {
-    margin-bottom: 30px;
-  }
-  /* Contact */
-  .contact-contact {
-    margin-bottom: 30px;
-  }
-  /* Footer */
-  #footer .socials-media ul li {
-    margin-right: 0;
-    margin-left: 0;
-    float: none;
-    display: inline-block;
-  }
-  /* Single page */
-  .entry-comments-body span {
-    display: inline-block;
-    margin-right: 0;
+}
+@media (max-width: 395px) {
+  #main-nav{
+    margin-right: 25px;
+    margin-left: 0px;
+    float: left;
+    max-width: 100%;
+   }
+  #main-nav .container{
+    margin-left: 0px;
+    float: left;
+    max-width: 390px;
   }
 }
