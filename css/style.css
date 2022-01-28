@@ -332,11 +332,7 @@ nav ul li a {
   padding-top: 20px;
 }
 
-#header {
-  background: url("../images/home-bg.jpg") repeat scroll center center / cover;
-  height: 100vh;
-  width: 100%;
-}
+
 
 
 #header .header-content {
@@ -711,6 +707,11 @@ nav ul li a {
   -o-transition: all 0.5s ease-in-out 0s;
   -webkit-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
+}
+#header {
+  background: url("../images/home-bg.jpg") repeat scroll center center / cover;
+  height: 100vh;
+  width: 100%;
 }
 
 #footer p {
