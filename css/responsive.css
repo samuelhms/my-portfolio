@@ -235,8 +235,18 @@
 @media (max-width: 480px) {
   /* Navbar */
   nav {
-    padding: 20px 15px;
+    display: inline-flex;
+    padding: 5px 35px 10px 25px;
+    
   }
+ 
+  .logo {
+    max-width: 70%;
+    float: left;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
   .nav-menu {
     margin-top: 40px;
     display: none;
@@ -244,6 +254,7 @@
     width: 100%;
   }
   .nav-menu li {
+    display: flow-root;
     float: none;
     width: 100%;
     text-align: center;
@@ -252,6 +263,7 @@
     margin-left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
+    background-color: #ffff;
   }
   .responsive {
     float: right;
@@ -322,6 +334,7 @@
     margin-left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
+    background-color: #f7f7f7;
   }
   .responsive {
     float: right;
