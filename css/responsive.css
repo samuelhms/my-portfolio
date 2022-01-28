@@ -251,6 +251,16 @@
     margin-right: 25px;
     
   }
+  .msg{
+    display: flex;
+    padding-top: 10%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+  
+  }
  
   .logo {
     

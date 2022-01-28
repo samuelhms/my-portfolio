@@ -202,3 +202,17 @@ if ($(window).width() < 480) { //se a tela for menor que 480 px
 }
 $("#main-nav").css("display", "none")
 
+// ========================================================================= //
+//  download cv
+// ========================================================================= //
+// $('cvpdf').on('click', function (e) {
+//   url = './cvpdf/cvsamuel.pdf'
+
+//   var link = document.createElement('a');
+//   link.href = url;
+//   link.download = 'Curriculo - Samuel Maciel.pdf';
+//   link.dispatchEvent(new MouseEvent('click'));
+  
+//     }
+//   );
+
