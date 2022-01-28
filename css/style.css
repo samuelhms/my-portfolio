@@ -677,9 +677,12 @@ nav ul li a {
 }
 
 #footer .socials-media ul {
-  display: inline-block;
+  display: flex;
   float: none;
   margin: 0 0 20px 0;
+  align-content: center;
+  justify-content:center;
+  flex-direction: row;
 }
 
 #footer .socials-media ul li {
@@ -722,6 +725,9 @@ nav ul li a {
   font-weight: 500;
   margin-top: 0;
   text-transform: uppercase;
+}
+.list-unstyled .socials-media {
+  padding: 10px;
 }
 .msg{
   display: flex;
