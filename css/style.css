@@ -661,13 +661,16 @@ nav ul li a {
   font-weight: 400;
   font-size: 13px;
 }
+#ctt{
+  padding-bottom: 30px;
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*  Footer
 /*-----------------------------------------------------------------------------------*/
 
 #footer {
-  background: #f7f7f7;
+  background: #616060;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -692,8 +695,8 @@ nav ul li a {
 }
 
 #footer .socials-media ul li a {
-  font-size: 24px;
-  color: #999;
+  font-size: 40px;
+  color: #000;
   letter-spacing: 0.1em;
   font-weight: 500;
   background: transparent;
@@ -706,7 +709,7 @@ nav ul li a {
 }
 
 #footer .socials-media ul li a:hover {
-  color: #b8a07e;
+  color: #fff;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;

@@ -379,7 +379,7 @@
     max-width: 395px;
   }
 }
-@media (max-width: 395px) {
+@media (max-width: 390px) {
   #main-nav{
     margin-right: 25px;
     margin-left: 0px;
