@@ -1,2 +1,2 @@
-# my-portifolio
-https://samuelhms.github.io/my-portifolio/
+# my-portfolio
+https://samuelhms.github.io/my-portfolio/
