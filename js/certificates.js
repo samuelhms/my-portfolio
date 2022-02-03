@@ -20,6 +20,7 @@ certificates_url.push({ url: `images/portfolio/google/fundamentalsII.jpg`, stack
 certificates_url.push({ url: `images/portfolio/google/introainterview.jpg`, stack: `all  frontend ` });
 certificates_url.push({ url: `images/portfolio/outros/21443-95211sap.jpg`, stack: `all others` });
 certificates_url.push({ url: `images/portfolio/outros/28277_124743pdi.jpg`, stack: `all  others` });
+certificates_url.push({ url: `images/portfolio/outros/csharp-bradesco.jpg`, stack: `all  backend` });
 
 
 function sortearCertificates() {
